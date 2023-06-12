@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <ImageView fitHeight="920.0" fitWidth="1451.0" layoutX="-7.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/bg-login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="296.0" layoutX="574.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="699.0" AnchorPane.topAnchor="156.0">
+         <image>
+            <Image url="@../Image/Logo%20Fix@4x.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="617.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat Datang!" textAlignment="CENTER" wrappingWidth="202.6708984375">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfUser" layoutX="593.0" layoutY="357.0" prefHeight="31.0" prefWidth="258.0" promptText="Username" />
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="543.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/kisspng-computer-icons-google-account-user-profile-iconfin-png-icons-download-profile-5ab0301e32cb90.1777380215214960942081.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="tfPass" layoutX="593.0" layoutY="416.0" prefHeight="31.0" prefWidth="258.0" promptText="Password" />
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="543.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/kisspng-computer-icons-font-awesome-lock-multi-factor-auth-lock-5abf404d4cb633.0685425515224832773142.png" />
+         </image>
+      </ImageView>
+    <Button layoutX="614.0" layoutY="522.0" mnemonicParsing="false" onAction="#buttonLogin" prefHeight="46.0" prefWidth="218.0" style="-fx-background-color: #F0bd66;" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Button>
+      <Text layoutX="627.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Belum punya akun?">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="777.0" layoutY="577.0" onAction="#hlDaftar" text="Daftar" textFill="#f0bd66" />
+      <Label fx:id="labelUser" layoutX="593.0" layoutY="391.0" prefHeight="21.0" prefWidth="258.0" textFill="RED" />
+      <Label fx:id="labelPass" layoutX="593.0" layoutY="450.0" prefHeight="21.0" prefWidth="258.0" textFill="RED" />
+   </children>
+</AnchorPane>

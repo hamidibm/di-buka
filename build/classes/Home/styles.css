@@ -1,0 +1,14 @@
+.background{
+    -fx-background-color: #F9FAFE;
+}
+.sidepanel{
+    -fx-background-color: white;
+}
+.button{
+    -fx-background-color: white;
+}
+.card{
+    -fx-background-color: white;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.04), 40, -20, 0, 20);
+}

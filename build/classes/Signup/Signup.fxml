@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Signup.SignupController">
+   <children>
+      <ImageView fitHeight="908.0" fitWidth="1450.0" layoutX="-6.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/bg-login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="345.0" layoutX="550.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Logo%20Fix@4x.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfUser" layoutX="550.0" layoutY="290.0" prefHeight="31.0" prefWidth="366.0" promptText="Username" />
+      <TextField fx:id="tfEmail" layoutX="550.0" layoutY="362.0" prefHeight="31.0" prefWidth="366.0" promptText="Alamat Email" />
+      <PasswordField fx:id="tfPass" layoutX="550.0" layoutY="435.0" prefHeight="31.0" prefWidth="175.0" promptText="Password" />
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="508.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/kisspng-computer-icons-google-account-user-profile-iconfin-png-icons-download-profile-5ab0301e32cb90.1777380215214960942081.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="508.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/kisspng-computer-icons-email-icon-design-equipo-comercial-5b525b3d27b571.4183532315321239651627.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="508.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/kisspng-computer-icons-font-awesome-lock-multi-factor-auth-lock-5abf404d4cb633.0685425515224832773142.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelUser" layoutX="550.0" layoutY="328.0" prefHeight="21.0" prefWidth="366.0" textFill="RED" />
+      <Label fx:id="labelEmail" layoutX="550.0" layoutY="402.0" prefHeight="21.0" prefWidth="366.0" textFill="RED" />
+      <Label fx:id="labelPass" layoutX="550.0" layoutY="475.0" prefHeight="21.0" prefWidth="366.0" textFill="RED" />
+      <Label fx:id="labelPass1" layoutX="550.0" layoutY="475.0" prefHeight="21.0" prefWidth="175.0" text="Password minimal 8 digit" textFill="#7c7a7a" />
+      <PasswordField fx:id="tfPass1" layoutX="741.0" layoutY="435.0" prefHeight="31.0" prefWidth="175.0" promptText="Konfirmasi" />
+      <Button layoutX="614.0" layoutY="553.0" mnemonicParsing="false" onAction="#buttonDaftar" prefHeight="46.0" prefWidth="218.0" style="-fx-background-color: #F0bd66;" text="Daftar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Button>
+      <Text layoutX="627.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah punya akun?">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="777.0" layoutY="615.0" onAction="#hlMasuk" text="Masuk" textFill="#f0bd66" />
+   </children>
+</AnchorPane>
